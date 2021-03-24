@@ -27,6 +27,7 @@ _Changing any of the panel options, including the dimensions, will re-render the
 
 - **Fake Data source:** Instead of randomly generating data every lifecycle this would act as a sort of fake database which could be queried, with a list userIds to display and a date range. This would allow for some functional changes in the HeatSeries component to load in more users then shown in the graph and allow for scrolling.
 - **Proper Date Handling:** Currently, the date generator will return the dates preformatted as strings*(YYYY-MM-DD)*. This is done for ease of use and compatibility between both versions but in production dates should remain a moment.js object or a date object until the very last step (visualising on the plot).
+- Ability to aggregate data by week or month (would be triggered from a grafana plugin option)
 - **Customisation:** The heatmap library that is currently used doesn't allow for axis labels, title, legend and further graph customisation options.
 
 ## High-level project overview
