@@ -65,7 +65,7 @@ If this is your first time running a grafana plugin in development mode, please 
 
 9. Configure the display settings to your liking. [Plugin Options](https://i.imgur.com/y6t8zTH.png)
 
-10) View The plugin and save your changes. [Dashbaord Example](https://i.imgur.com/Z3QU1bO.png)
+10) View The plugin and save your changes. [Dashboard Example](https://i.imgur.com/Z3QU1bO.png)
 
 ## Viewing the Custom HeatMap (failed attempt):
 
