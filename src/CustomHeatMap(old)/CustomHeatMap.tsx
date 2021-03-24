@@ -69,7 +69,7 @@ export const CustomHeatMap: React.FC<CustomHeatMapProps> = ({ dimensions, chartD
           .style('opacity', 0.8);
       }
     })();
-  }, [chartData, d3Container.current]);
+  }, [chartData, baseColor, graphHeight, graphWidth, d3Container.current]);
 
   return (
     <svg className="d3-component" width={width} height={height} ref={d3Container}>
