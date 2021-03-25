@@ -17,15 +17,15 @@ This Project does **not** interact with data that is provided by Grafana itself.
 - Includes random data generator for both formats.
 - Uses [Moment.js](https://momentjs.com/) for all dates and date calculation.
 - React Functional Components, hooks and typescript.
-- X Dimensions (Days) customisable in panel options.
-- Y Dimensions (Users) customisable in panel options.
+- Built-in AirBnB Style date-range picker using[react-dates](https://github.com/airbnb/react-dates).
+- X and Y Dimensions (Users) customisable in panel options.
 - Variety of customizable options (base color, text color in cells, text size and more).
 
 _Changing any of the panel options, including the dimensions, will re-render the component causing the data to be randomly generated again. Though, this might be sub-optimal for development purposes, this is the expected behavior in production as when changing the number of users or days to display the plugin would make a new call to whichever source is producing the data. Thus, only requesting the data needed for that graph, rather than getting all data and filtering in the front-end._
 
 ## Possible Improvements
 
-- **Fake Data source:** Instead of randomly generating data every lifecycle, a Typescript script would act as a sort of fake database which could be queried, with a list of userIds to display and a date range. This would allow for some functional changes in the HeatSeries component to load in more users then shown in the graph and allow for scrolling.
+- **Fake Data source:** Instead of randomly generating data every lifecycle, a Typescript script would act as a sort of fake database which could be queried, with a list of userIds to display and a date range. This would still cause the graph to rerender every lifecycle but the data wouldn't change, thus simulating a production environment.
 - **Proper Date Handling:** Currently, the date generator will return the dates preformatted as strings*(YYYY-MM-DD)*. This is done for ease of use and compatibility between both versions, but in production dates should remain a moment.js object or a date object until the very last step (visualising on the plot).
 - Ability to aggregate data by week or month (would be triggered from a grafana plugin option).
 - **Customisation:** The heatmap library that is currently used doesn't allow for axis labels, title, legend and further graph customisation options.
@@ -64,9 +64,9 @@ If this is your first time running a grafana plugin in development mode, please 
 
 8) Choose the Heat Series Visualisation from the list of possible visualisations. [Plugin Logo](https://i.imgur.com/fUIj6de.png)
 
-9. Configure the display settings to your liking. [Plugin Options](https://i.imgur.com/y6t8zTH.png)
+9. Configure the display settings to your liking. [Plugin Options](https://i.imgur.com/SFY51kH.png)
 
-10) View The plugin and save your changes. [Dashboard Example](https://i.imgur.com/Z3QU1bO.png)
+10) View The plugin and save your changes. [Dashboard Example](https://i.imgur.com/3F9v79U.png)
 
 ## Viewing the Custom HeatMap (failed attempt):
 
