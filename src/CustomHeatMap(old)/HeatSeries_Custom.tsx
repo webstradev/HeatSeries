@@ -10,11 +10,11 @@ import { CustomHeatMap } from 'CustomHeatMap(old)/CustomHeatMap';
 
 interface Props extends PanelProps<CustomHeatSeriesOptions> {}
 
-export const HeatSeries: React.FC<Props> = ({ options, data, width, height }) => {
+export const HeatSeries: React.FC<Props> = ({ options, width, height }) => {
   const theme = getTheme();
 
   const { numUsers, daysAgo, color } = options;
-  const { xLabels, yLabels, chartData } = generateDummyData(getDateXDaysAgo(daysAgo), moment(), numUsers, true);
+  const { xLabels, yLabels, data } = generateDummyData(getDateXDaysAgo(daysAgo), moment(), numUsers, true);
 
   // Convert get base color string from options using grafana native
   const baseColor = getColorForTheme(color, theme);
@@ -23,7 +23,7 @@ export const HeatSeries: React.FC<Props> = ({ options, data, width, height }) =>
     <div style={{ width, height }}>
       <CustomHeatMap 
         dimensions={{width, height, margins:{top: 30, right: 30, bottom: 30, left: 30}}}
-        chartData={{data:chartData, xLabels, yLabels}}
+        chartData={{data, xLabels, yLabels}}
         baseColor={baseColor}
       />
     </div>

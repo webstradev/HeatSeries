@@ -22,8 +22,10 @@
     "node": ">=14"
   },
   "dependencies": {
+    "@types/react-dates": "^21.8.1",
     "moment": "^2.29.1",
     "react-d3-library": "^1.1.8",
+    "react-dates": "^21.8.0",
     "react-heatmap-grid": "^0.8.2"
   }
 }

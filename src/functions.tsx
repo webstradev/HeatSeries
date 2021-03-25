@@ -61,32 +61,32 @@ export const generateDummyData = (start: Moment, end: Moment, numUsers: number, 
 
   const xLabels = enumerateDaysBetweenDates(start, end); // Generate date label for each date
   const yLabels = new Array(numUsers).fill(0).map((_, i) => `${numUsers - i}`); // Generate user id label for each users
-  let chartData: Array< number[] | DataEntry>; // Either a 2d array of number OR a flat array of data entries
+  let data: number[][] | DataEntry[]; // Either a 2d array of number OR a flat array of data entries
 
   if (flat) {
-    const data: DataEntry[] = [];
+    const arr: DataEntry[] = [];
 
     // Create a json object for each date for each user.
     xLabels.forEach(label => {
       yLabels.forEach(user => {
-        data.push({
+        arr.push({
           date: label,
           userId: user,
           value: Math.floor(Math.random() * 100),
         });
       });
     });
-    chartData = data;
+    data = arr;
   } else {
     // Create 2D-Array
-    const data = new Array(numUsers)
+    const arr = new Array(numUsers)
       .fill(0) // Create an empty array with length of numUsers
       // For each user create an array with the length of the dates array and populate with random values between 0 and 100
       .map(() => new Array(xLabels.length).fill(0).map(() => Math.floor(Math.random() * 100)));
-    chartData = data;
+    data = arr;
   }
 
-  return { xLabels, yLabels, chartData };
+  return { xLabels, yLabels, data };
 };
 
 export const calculateCellColor = (base: string[], min: number, max: number, value: number, invert: boolean) => {

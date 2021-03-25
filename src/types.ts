@@ -12,7 +12,6 @@ export interface HeatSeriesOptions {
   fontColor: string;
 }
 
-
 /* Interfaces below are required for HeatSeries_old (which was a failed attempt) */
 
 export interface CustomHeatSeriesOptions {
@@ -48,10 +47,10 @@ export interface DataEntry {
   value: number;
 }
 
-interface DataObject {
+export interface DataObject {
   /* Data and Labels for Custom HeatMap */
 
-  data: Array<number[] | DataEntry>;
+  data: number[][] | DataEntry[];
   xLabels: string[]; // Should actually be a date object, but dummyDataGenerator returns trimmed strings for now.
   yLabels: string[]; // Labels have already been converted from number to string by the generator.
 }

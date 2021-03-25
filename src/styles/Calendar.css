@@ -1,0 +1,59 @@
+.DateRangePicker_picker {
+    background-color: #222222;
+    z-index: 200;
+}
+
+.CalendarMonth, .CalendarMonthGrid, .DayPicker {
+    background-color: #222222;
+}
+
+.CalendarDay__default {
+    background: #222222;
+    color: white;
+}
+
+.CalendarDay__selected_span {
+    background: #333333;
+    color: white;
+    border: 1px solid #000000;
+}
+
+.CalendarMonth_caption {
+    color: white;
+}
+
+.DateRangePickerInput, .DateInput, .DateInput_input, .DateInput_input__focused {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.DateInput_input__focused {
+    background-color: #444444;
+}
+
+.CalendarDay__blocked_out_of_range, .CalendarDay__blocked_out_of_range:hover {
+    background-color: #333333;
+    color: #AAAAAA;
+    text-decoration: line-through;
+}
+
+.DayPickerNavigation_button__default {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.DayPickerNavigation_svg__horizontal {
+    fill: #FFFFFF;
+}
+
+.DayPickerNavigation_button__default:active {
+    background-color: #888888;
+}
+
+.DayPickerKeyboardShortcuts_show__bottomRight {
+    display: none;
+}
+
+.DateRangePickerInput__withBorder {
+    border-color: #555555;
+}

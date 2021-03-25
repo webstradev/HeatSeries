@@ -6,8 +6,8 @@ export const plugin = new PanelPlugin<HeatSeriesOptions>(HeatSeries).setPanelOpt
   return builder
     .addNumberInput({
       path: 'daysAgo',
-      name: 'Number of Days',
-      description: 'How many days to include (excluding today)',
+      name: 'Default number of days',
+      description: 'How many days to display by default',
       defaultValue: 10,
     })
     .addNumberInput({
