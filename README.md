@@ -62,7 +62,7 @@ If this is your first time running a grafana plugin in development mode, please 
 
 7. Add a new panel to an existing (or newly created) dashboard. [More Information](https://grafana.com/docs/grafana/latest/panels/add-a-panel/)
 
-8) Choose the Heat Series Visualisation from the list of possible visualisations. [Plugin Logo](https://i.imgur.com/fUIj6de.png)
+8) Choose the Heat Series Visualisation from the list of possible visualisations. [Plugin Logo](https://i.imgur.com/1CxPRu6.png)
 
 9. Configure the display settings to your liking. [Plugin Options](https://i.imgur.com/SFY51kH.png)
 
