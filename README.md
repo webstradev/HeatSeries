@@ -17,7 +17,7 @@ This Project does **not** interact with data that is provided by Grafana itself.
 - Includes random data generator for both formats.
 - Uses [Moment.js](https://momentjs.com/) for all dates and date calculation.
 - React Functional Components, hooks and typescript.
-- Built-in AirBnB Style date-range picker using[react-dates](https://github.com/airbnb/react-dates).
+- Built-in AirBnB Style date-range picker using [react-dates](https://github.com/airbnb/react-dates).
 - X and Y Dimensions (Users) customisable in panel options.
 - Variety of customizable options (base color, text color in cells, text size and more).
 
