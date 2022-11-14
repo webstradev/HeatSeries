@@ -1,6 +1,6 @@
 # Grafana HeatSeries Panel Plugin
 
-This project is a hobby project and is NOT suitable for production.
+This project is a hobby project and was required for a Technical Assessment and should NOT be considered suitable for production.
 
 ## Project Summary
 
